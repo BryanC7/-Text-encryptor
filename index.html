@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section class="contenedor">
+        <img class="logo" src="img/Logo.png" alt="logo">
+
+        <input class="campo" type="text" id="input" placeholder="Ingrese el texto aquí">
+
+        <div class="indicacion">
+            <img class="exclamation" src="img/exclamation.png" alt="exclamation">
+            <p class="indicacion__texto">Solo letras minúsculas y sin tildes</p>
+        </div>
+
+        <div class="botones">
+            <input id="btn-encript" class="boton__e" type="submit" value="Encriptar">
+            <input id="btn-desencript" class="boton__de" type="submit" value="Desencriptar">
+        </div>
+        
+        <div class="texto-encriptado">
+            <img class="imagenm" src="img/Muñeco.png" alt="muñeco">
+            <div class="textos">
+                <p class="texto1">Ningún mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="encriptador.js"></script>
+
+</html>
