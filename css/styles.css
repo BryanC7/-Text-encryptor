@@ -1,0 +1,234 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #F3F5FC;
+    /* width: 1440px;
+    height: 1024px; */
+}
+
+/* Globales */
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    position: relative;
+}
+/* Logo */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 12rem;
+    height: 4.8rem;
+    left: 4rem;
+    top: 4rem;
+}
+.campo {
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border-style: none;
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.indicacion {
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 18px;
+    left: 255px;
+    top: 851px;
+}
+.indicacion__texto {
+    width: 205px;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+/* identical to box height, or 18px */
+
+/* Gray/gray-400 */
+    color: #495057;
+    opacity: 0.8;
+
+/* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.exclamation {
+    margin: 0 1rem;
+}
+.botones {
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+.boton__e {
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    font-size: 2rem;
+    color: #FFFFFF;
+    
+/* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+    
+/* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+.boton__de {
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    font-size: 2rem;
+    color: #0A3871;
+    
+/* Light gray */
+    background: #D8DFE8;
+    
+/* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    
+/* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+/* Rectángulo */
+.texto-encriptado {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* White */
+    background: #FFFFFF;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.imagenm{
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+.textos {
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+.texto1 {
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343A40;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+.texto2 {
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
