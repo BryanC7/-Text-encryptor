@@ -31,10 +31,11 @@ body {
 .campo {
     color: #0A3871;
     background-color: #F3F5FC;
-    border-style: none;
+    border-style: solid;
+    resize: none;
     position: absolute;
     width: 577px;
-    height: 48px;
+    height: 500px;
     left: 240px;
     top: 168px;
     font-family: 'Inter';
@@ -231,4 +232,10 @@ body {
     align-self: stretch;
     flex-grow: 0;
     margin: 16px 0px;
+}
+.texto-traducido {
+    font-size: 2rem;
+    color: #0A3871;
+    padding: 1rem;
+    text-align: justify;
 }

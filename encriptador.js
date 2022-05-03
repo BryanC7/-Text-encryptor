@@ -38,6 +38,7 @@ let texto = ''
 
 function encriptar(){
     texto = document.querySelector('#input').value
+    texto = cleanStrings(texto)
     let nuevoTexto = texto.split('')
     for (let i = 0; i < nuevoTexto.length; i++) {
         for (let j = 0; j < Object.keys(traductor).length; j++) {
@@ -58,6 +59,7 @@ document.querySelector('#btn-encript').onclick = encriptar
 
 function desencriptar() {
     texto = document.querySelector('#input').value
+    texto = cleanStrings(texto)
     texto = texto.replaceAll('ai', 'a').replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ober', 'o').replaceAll('ufat', 'u')
     if(!validarRecuadro(texto)){
         imprimirRecuadro(texto)
@@ -72,6 +74,7 @@ function imprimirRecuadro(palabra) {
     let textoEncriptado = document.querySelector('.texto-encriptado')
     let text = document.createElement('p')
     text.innerHTML = palabra
+    text.classList.add('texto-traducido')
     textoEncriptado.innerHTML = ''
     textoEncriptado.appendChild(text)
 }
@@ -92,4 +95,10 @@ function validarRecuadro(textoVacio) {
     } else {
         return false
     }
+}
+
+// Input traduzca texto tanto en mayúsculas como en minúsculas, con o sin tilde
+
+function cleanStrings (str){
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
 }
